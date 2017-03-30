@@ -9,7 +9,7 @@
   */
   var availHeight = screen.availHeight;
   var availWidth = screen.availWidth;
-  document.getElementById("h5lock").style.height = availHeight+"px";
+  // document.getElementById("h5lock").style.height = availHeight+"px";
   var canvas=document.getElementById("canvas");
   var hint_info = document.getElementById("hint");
   var radio = document.getElementById("radio");
