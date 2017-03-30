@@ -138,6 +138,7 @@
   function update(event){
     if(flag){
         // console.log(event.type);
+        event.preventDefault();
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         circles.map(function(item){
@@ -295,9 +296,9 @@
 
     radio.addEventListener("change",change);
     reset.addEventListener('click',reset_code);
-    // canvas.addEventListener("mousedown",start);
-    // canvas.addEventListener("mousemove",update);
-    // canvas.addEventListener("mouseup",end);
+    canvas.addEventListener("mousedown",start);
+    canvas.addEventListener("mousemove",update);
+    canvas.addEventListener("mouseup",end);
   }
 
   //执行初始化函数
